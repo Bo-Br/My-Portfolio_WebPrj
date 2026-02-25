@@ -1,0 +1,46 @@
+{
+    "start_page" : [
+            {
+            "title" : "About Me", 
+            "image" : "", 
+            "description": " If you want to know me better, click here! "
+            },
+            {
+            "title" : "About My Skills", 
+            "image" : "", 
+            "description": " All the technical stuff is in here! "
+        }],
+
+    "about_me" : { 
+        "hero" : {
+            "photo" : " ", 
+            "fast_description" : " ",
+            "hobbyes" : ["Guitar", "Piano", "Magic Tricks", "Calistenics", "DJ", "Media Creation", "Airsoft"],
+            "quote" : "Growth requires effort; decline does not."
+        },
+
+        "fun_facts" : {
+            "0" : {
+                "title" : "Favorite book",
+                "image" : " ", 
+                "info_1" : "Title : Pandora's Box",
+                "info_2" : "Author : Bernard Werber"
+            },
+            "2" : {
+                "title" : "Favorite videogame",
+                "image" : " ", 
+                "info_1" : "Name : Rimworld",
+                "info_2" : "I like the randomness of this game"
+            },
+            "3" : {
+                "title" : "Favorite Film",
+                "image" : " ", 
+                "info_1" : "Title : Stalker",
+                "info_2" : "Directed by : Andrey Tarkovsky"
+            }
+        },
+
+        "visited_countries" : ["Russia", "France", "Italy", "Germany"]
+    }
+
+}
