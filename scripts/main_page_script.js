@@ -25,10 +25,9 @@ function mainPageCreateDivs(DATABASE){
     main_container.innerHTML += `
         <div class = "main_page_card">
             <h2>${element.title}</h2>
-            <img src="" alt="">
+            <img class = "lazy-img" src=${element.image} alt="">
             <p>${element.description}</p>
-        </div>` ; // Creating the div and adding it into the HTML file
-
+        </div>` ; // Creating the div and adding it into the HTML file. NOT TO FORGET : LAZY IMAGE OPTIMISATION
     });
 
 };

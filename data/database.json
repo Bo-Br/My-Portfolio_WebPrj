@@ -2,12 +2,12 @@
     "start_page" : [
             {
             "title" : "About Me", 
-            "image" : "", 
+            "image" : "/images/face.jpg", 
             "description": " If you want to know me better, click here! "
             },
             {
             "title" : "About My Skills", 
-            "image" : "", 
+            "image" : "/images/code.jpg", 
             "description": " All the technical stuff is in here! "
         }],
 
