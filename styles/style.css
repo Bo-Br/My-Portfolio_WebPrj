@@ -158,33 +158,55 @@ a:hover{
 /*#######################################################################################################*/
 
 
-
+/* All boxes on the about page */
 .cardBox{
-    box-shadow: inset 5px 5px 30px 1px rgba(0,0,0,0.92);
-    margin: 10px 0px 70px 0px;
-    width: fit-content;
-    min-width: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    height: fit-content;
     text-align: center;
+    /*  */
+    width: fit-content;
+    height: fit-content;
+    min-width: 825px;
+    /*  */
     background-color: var(--card-container-bck-color);
-    border-radius: 15px;
+    box-shadow: inset 5px 5px 30px 1px rgba(0,0,0,0.92);
+    /*  */
+    margin: 10px;
     padding:10px;
+    border-radius: 15px;
+    
     img{
         width: 200px;
         height: 200px;
         border-radius: 50%;
         border : 5px solid white;
         box-shadow: 5px 5px 45px 5px rgba(0,0,0,0.56);
+        filter : grayscale(1);
+        transition: all 0.2s ease-in-out;
     }
+    
+    img:hover{
+        filter : grayscale(0);
+        transition: all 0.2s ease-in-out;
+    }
+
     p{
         max-width: 500px;
     }
 }
+
+
+/* Hero image and text box */
+#imageAndText{
+    height: 445px;
+}
+
+
+
+/* Cards with facts styling */
 .fact-card{
     border: 4px solid rgb(0, 0, 0);
     transition: all 0.3s ease-in-out;
@@ -199,12 +221,12 @@ a:hover{
 
 }
 
+/* small cards aka - Coutries and hobby small buttons  */
 .small-card{
     border: 3px solid rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease-in-out;
     transform: scale(1);
     height: 30px;
     width: fit-content;
@@ -214,12 +236,37 @@ a:hover{
     background-color: var(--card-bck-color);
     border-radius: 5px;
     box-shadow: 5px 5px 45px 5px rgba(0,0,0,0.56);
-
+    filter : grayscale(1);
+    transition: all 0.3s ease-in-out;
 }
+
+/* Hobbies and visited countries BOXES */
+#hobbyes, #visited_coutries{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /*  */
+    box-shadow: inset 5px 5px 30px 1px rgba(0,0,0,0.92);
+    background-color: var(--card-container-bck-color);
+    /*  */
+    margin: 10px 0px 70px 0px;
+    border-radius: 15px;
+    padding:10px;
+    /*  */
+    height: fit-content;
+    width: fit-content;
+    min-width: 400px;
+    width: 100px;
+    text-align: center;
+}
+
 
 .small-card:hover{
     border: 3px solid rgb(255, 255, 255);
     transform: scale(1.2);
+    filter : grayscale(0);
     transition: all 0.3s ease-in-out ;
 }
 
@@ -229,12 +276,26 @@ a:hover{
     transition: all 0.3s ease-in-out ;
 }
 
-img{
-    filter : grayscale(1);
-    transition: all 0.2s ease-in-out;
+
+/* QUOTE TEXT STYLING */
+#quote_text{
+    font-style:italic ;
+    font-size: 20px ;
+    color: rgb(188, 188, 188);
 }
 
-img:hover{
-    filter : grayscale(0);
-    transition: all 0.2s ease-in-out;
+#quote_text::before{
+    content : "~~";
 }
+
+#quote_text::after{
+    content : "~~";
+
+}
+
+
+/*#######################################################################################################*/
+/*--------------------------------------------- Testing -------------------------------------------------*/
+/*#######################################################################################################*/
+/* div{border:3px solid red;} */
+/* section{border:3px solid green;} */

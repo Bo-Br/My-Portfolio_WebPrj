@@ -10,6 +10,8 @@ const zoneQuote = document.querySelector("#quote")
 const zoneFunFacts = document.querySelector("#fun_facts")
 const zoneCountries = document.querySelector("#visited_coutries ")
 
+console.log(zoneCountries)
+
 
 
 // #################################################################################################
@@ -45,13 +47,13 @@ function AboutMeCreatePage(DATABASE){
     const countries = DATABASE.about_me[4].visited_countries
 
 // Use all this info to create the page
-    createHeroZone(hero)
+    
     createHobbiesZone(hobbyes)
     createQuoteZone(quote)
     createFunFactsZone(fun_facts)
     createCountries(countries)
+    createHeroZone(hero)
 };
-
 
 // #################################################################################################
 // ---------------------------------- SECTION CREATING FUNCTIONS -----------------------------------
@@ -61,9 +63,7 @@ function AboutMeCreatePage(DATABASE){
 function createQuoteZone(quote){
 // Adding the quote zone
     zoneQuote.innerHTML += `
-        <div>
-            <h3> ${quote} </h3>
-        </div>
+            <h3 id = "quote_text"> ${quote} </h3>
         ` ;
 };
 
@@ -95,12 +95,14 @@ function createCountries(countries){
 
 function createHeroZone(hero){
     // Adding the Hero Zone
-    zoneAbout.innerHTML = `
+    zoneAbout.innerHTML += `
+    <div id = "imageAndText" class = "cardBox">
         <img src="${hero.photo}" alt="">
         <div>
             <h3> Who am I? </h3>
             <p> ${hero.fast_description} </p>
         </div>
+    </div>
         ` ;
 };
 
