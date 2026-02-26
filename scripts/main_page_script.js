@@ -1,5 +1,15 @@
-// 
+// #################################################################################################
+// ----------------------------- GATHER ALL THE SECTIONS IN VARIABLES ------------------------------
+// #################################################################################################
+
 const main_container = document.querySelector("#main_page_container"); // the container of th edivs on the main page
+
+
+// #################################################################################################
+// ------------------------------------ DATABASE DATA GATHERING ------------------------------------
+// #################################################################################################
+
+
 const dataURL = "/data/database.json"; // json database local URL
 
 // On page loaded this function takes all the info from the json database and loads the main page
@@ -17,11 +27,14 @@ addEventListener("DOMContentLoaded", async() =>{
     };
 });
 
+// #################################################################################################
+// ---------------------------------- SECTION CREATING FUNCTIONS -----------------------------------
+// #################################################################################################
 
 //Function to create the main page divs
 function mainPageCreateDivs(DATABASE){
     DATABASE.start_page.forEach(element => { //For each element in the start_page data of the database
-
+    
     main_container.innerHTML += `
         <a href=${element.link}>
             <div class = "main_page_card appear">
