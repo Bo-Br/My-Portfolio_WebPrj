@@ -27,13 +27,14 @@ addEventListener("DOMContentLoaded", async() =>{
 
 //Function to create the About me page
 function AboutMeCreatePage(DATABASE){
-    console.log(DATABASE.about_me[1].hobbyes)
 
     const hero = DATABASE.about_me[0].hero 
     const hobbyes = DATABASE.about_me[1].hobbyes
     const quote = DATABASE.about_me[2].quote
     const fun_facts = DATABASE.about_me[3].fun_facts
     const countries = DATABASE.about_me[4].visited_countries
+
+
 // Adding the Hero Zone
     zoneAbout.innerHTML = `
         <img src="${hero.photo}" alt="">
@@ -55,7 +56,7 @@ function AboutMeCreatePage(DATABASE){
 // Adding the quote zone
     zoneQuote.innerHTML += `
         <div>
-            <h3> Favorite quote : ${quote} </h3>
+            <h3> ${quote} </h3>
         </div>
         ` ;
 

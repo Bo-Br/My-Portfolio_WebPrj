@@ -25,7 +25,7 @@ function mainPageCreateDivs(DATABASE){
     main_container.innerHTML += `
         <a href=${element.link}>
             <div class = "main_page_card appear">
-                <h2>${element.title}</h2>
+                <h3>${element.title}</h3>
                 <img class = "lazy-img" src=${element.image} alt="">
                 <p>${element.description}</p>
             </div>

@@ -6,6 +6,7 @@
     --main-bck-color : black;
     --card-container-bck-color : rgb(125, 125, 125);
     --card-bck-color : rgb(35, 35, 35);
+    --text-special-effect : "•----------•";
 }
 
 
@@ -17,7 +18,6 @@
 /*#######################################################################################################*/
 /*--------------------------------------------- GENERAL -------------------------------------------------*/
 /*#######################################################################################################*/
-
 body{
     color: var(--text-color); 
     display: flex;
@@ -30,6 +30,15 @@ body{
     h1{
         margin: 150px;
     }
+}
+
+h2::before{
+    content : var(--text-special-effect);
+    color: var(--text-color);
+}
+h2::after{
+    content : var(--text-special-effect);
+    color: var(--text-color);
 }
 /*#######################################################################################################*/
 /*--------------------------------------------- MAIN PAGE -----------------------------------------------*/
@@ -44,10 +53,11 @@ a{
 
 
 #main_page_container{
+    width: 800px ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -62,7 +72,7 @@ a{
     text-align: center;
     background-color: var(--card-container-bck-color);
     border-radius: 5px;
-    margin: 4px;
+
     img{
         width: 200px;
         height: 200px;
@@ -94,7 +104,11 @@ a:hover{
 /*----------------------------------------- PERSONAL PAGE -----------------------------------------------*/
 /*#######################################################################################################*/
 
+
+
 .cardBox{
+    box-shadow: inset 5px 5px 30px 1px rgba(0,0,0,0.92);
+    margin: 10px 0px 70px 0px;
     width: fit-content;
     min-width: 1000px;
     display: flex;
@@ -105,20 +119,21 @@ a:hover{
     height: fit-content;
     text-align: center;
     background-color: var(--card-container-bck-color);
-    border-radius: 5px;
-    margin: 4px;
+    border-radius: 15px;
     padding:10px;
     img{
         width: 200px;
         height: 200px;
         border-radius: 50%;
         border : 5px solid white;
+        box-shadow: 5px 5px 45px 5px rgba(0,0,0,0.56);
     }
     p{
         max-width: 500px;
     }
 }
 .fact-card{
+    border: 4px solid rgb(0, 0, 0);
     transition: all 0.3s ease-in-out;
     transform: scale(1);
     min-width: 400px;
@@ -126,10 +141,13 @@ a:hover{
     margin: 5px;
     background-color: var(--card-bck-color);
     border-radius: 5px;
+    box-shadow: 5px 5px 45px 5px rgba(0,0,0,0.56);
+
 
 }
 
 .small-card{
+    border: 3px solid rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,14 +160,28 @@ a:hover{
     margin: 5px;
     background-color: var(--card-bck-color);
     border-radius: 5px;
+    box-shadow: 5px 5px 45px 5px rgba(0,0,0,0.56);
+
 }
 
 .small-card:hover{
+    border: 3px solid rgb(255, 255, 255);
     transform: scale(1.2);
     transition: all 0.3s ease-in-out ;
 }
 
 .fact-card:hover{
+    border: 4px solid rgb(255, 255, 255);
     transform: scale(1.05);
     transition: all 0.3s ease-in-out ;
+}
+
+img{
+    filter : grayscale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+img:hover{
+    filter : grayscale(0);
+    transition: all 0.2s ease-in-out;
 }
