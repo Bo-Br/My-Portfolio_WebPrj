@@ -217,6 +217,9 @@ nav, footer{
 /* Hero image and text box */
 #imageAndText{
     height: 445px;
+    p{
+        text-align: start;
+    }
 }
 
 
