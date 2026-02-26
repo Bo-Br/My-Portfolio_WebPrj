@@ -1,5 +1,6 @@
 {
-    "start_page" : [
+    "start_page" : 
+    [
             {
             "title" : "About Me", 
             "image" : "/images/face.jpg", 
@@ -9,47 +10,56 @@
             "title" : "About My Skills", 
             "image" : "/images/code.jpg", 
             "description": " All the technical stuff is in here! "
-        }],
+            }   
+    ],
 
-    "about_me" : [ 
+    "about_me" : 
+    [ 
+        {
+            "hero" : 
+                {
+                "photo" : "/images/face.jpg", 
+                "fast_description" : "My fast description"
+                }
+        },
 
         {
-            "hero" : {
-                "photo" : " ", 
-                "fast_description" : " "
-            }, 
+            "hobbyes" : ["Guitar", "Piano", "Magic Tricks", "Calistenics", "DJ", "Media Creation", "Airsoft"]
+        },
 
-            "hobbyes" : ["Guitar", "Piano", "Magic Tricks", "Calistenics", "DJ", "Media Creation", "Airsoft"],
-
+        {
             "quote" : "Growth requires effort; decline does not."
         },
-
-        {
-            "fun_facts" : [
-            {
-                "title" : "Favorite book",
-                "image" : " ", 
-                "info_1" : "Title : Pandora's Box",
-                "info_2" : "Author : Bernard Werber"
-            },
-            {
-                "title" : "Favorite videogame",
-                "image" : " ", 
-                "info_1" : "Name : Rimworld",
-                "info_2" : "I like the randomness of this game"
-            },
-            {
-                "title" : "Favorite Film",
-                "image" : " ", 
-                "info_1" : "Title : Stalker",
-                "info_2" : "Directed by : Andrey Tarkovsky"
-            }
-                    ]
-        },
+    
 
 
         {
-            "visited_countries" : ["Russia", "France", "Italy", "Germany"]
-        }
+            "fun_facts" : 
+            [
+                {
+                    "title" : "Favorite book",
+                    "image" : " ", 
+                    "info_1" : "Title : Pandora's Box",
+                    "info_2" : "Author : Bernard Werber"
+                },
+                {
+                    "title" : "Favorite videogame",
+                    "image" : " ", 
+                    "info_1" : "Name : Rimworld",
+                    "info_2" : "I like the randomness of this game"
+                },
+                {
+                    "title" : "Favorite Film",
+                    "image" : " ", 
+                    "info_1" : "Title : Stalker",
+                    "info_2" : "Directed by : Andrey Tarkovsky"
+                }
+            ]
+        }, 
+
+
+        {"visited_countries" : ["Russia", "France", "Italy", "Germany"]}
+
+
     ]
 }
