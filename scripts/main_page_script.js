@@ -23,11 +23,14 @@ function mainPageCreateDivs(DATABASE){
     DATABASE.start_page.forEach(element => { //For each element in the start_page data of the database
 
     main_container.innerHTML += `
-        <div class = "main_page_card">
-            <h2>${element.title}</h2>
-            <img class = "lazy-img" src=${element.image} alt="">
-            <p>${element.description}</p>
-        </div>` ; // Creating the div and adding it into the HTML file. NOT TO FORGET : LAZY IMAGE OPTIMISATION
+        <a href=${element.link}>
+            <div class = "main_page_card appear">
+                <h2>${element.title}</h2>
+                <img class = "lazy-img" src=${element.image} alt="">
+                <p>${element.description}</p>
+            </div>
+        </a>` ; // Creating the div and adding it into the HTML file. NOT TO FORGET : LAZY IMAGE OPTIMISATION
+
     });
 
 };

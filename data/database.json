@@ -2,13 +2,15 @@
     "start_page" : 
     [
             {
+            "link" : "/pages/about_me.html",
             "title" : "About Me", 
-            "image" : "/images/face.jpg", 
+            "image" : "/images/main_page/face.jpg", 
             "description": " If you want to know me better, click here! "
             },
             {
+            "link" : "/pages/about_skills.html",
             "title" : "About My Skills", 
-            "image" : "/images/code.jpg", 
+            "image" : "/images/main_page/code.jpg", 
             "description": " All the technical stuff is in here! "
             }   
     ],
@@ -18,8 +20,8 @@
         {
             "hero" : 
                 {
-                "photo" : "/images/face.jpg", 
-                "fast_description" : "My fast description"
+                "photo" : "/images/main_page/face.jpg", 
+                "fast_description" : "I have a passion for coding since 13 years old, I started with visual programming on Construct 2/3, where I created a lot of small projects, a small amout of which I posted on itch.io. Since june 2025, I'm learning Godot, a more complex game engine. Curious about Cybersecurity, I explored a lot of Linux distributions such as linux Mint, Kali or Tails, and aquired some basic knowledge in OSINT with tools like Sherlock, or just simply Google. Since I started Web Dev in January 2026 I am beginning to enjoy it to a point where I am even thinking to maybe work in this field, instead of doing cybersecurity. In parallel of Informational technologies, I have a lot of other interests such as music, magic tricks, and sport. I am now at my first year in 'École IT', an IT school,  and I always search for new knowledge and opportunities !"
                 }
         },
 
@@ -28,7 +30,7 @@
         },
 
         {
-            "quote" : "Growth requires effort; decline does not."
+            "quote" : " 'Growth requires effort - decline does not.'"
         },
     
 
@@ -38,19 +40,19 @@
             [
                 {
                     "title" : "Favorite book",
-                    "image" : " ", 
+                    "image" : "/images/about_page/pandora.jpg", 
                     "info_1" : "Title : Pandora's Box",
                     "info_2" : "Author : Bernard Werber"
                 },
                 {
                     "title" : "Favorite videogame",
-                    "image" : " ", 
+                    "image" : "/images/about_page/rimworld.jpg", 
                     "info_1" : "Name : Rimworld",
                     "info_2" : "I like the randomness of this game"
                 },
                 {
                     "title" : "Favorite Film",
-                    "image" : " ", 
+                    "image" : "/images/about_page/stalker.jpg", 
                     "info_1" : "Title : Stalker",
                     "info_2" : "Directed by : Andrey Tarkovsky"
                 }
