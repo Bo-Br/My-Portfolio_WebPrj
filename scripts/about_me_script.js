@@ -18,9 +18,9 @@ addEventListener("DOMContentLoaded", async() =>{
 });
 
 
-//Function to create the main page divs
-function mainPageCreateDivs(DATABASE){
-    DATABASE.start_page.forEach(element => { //For each element in the start_page data of the database
+//Function to create the About me page
+function AboutMeCreatePage(DATABASE){
+    DATABASE.about_me.forEach(element => { //For each element in the start_page data of the database
 
     main_container.innerHTML += `
         <div class = "main_page_card">
