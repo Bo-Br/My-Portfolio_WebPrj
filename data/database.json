@@ -12,6 +12,12 @@
             "title" : "About My Skills", 
             "image" : "/images/main_page/code.jpg", 
             "description": " All the technical stuff is in here! "
+            },
+            {
+            "link" : "/index.html",
+            "title" : "Add a page", 
+            "image" : "https://placehold.co/200x200?text=%2B", 
+            "description": "Not Yet implemented !"
             }   
     ],
 
@@ -39,13 +45,13 @@
             "fun_facts" : 
             [
                 {
-                    "title" : "Favorite book",
+                    "title" : "Favorite Book",
                     "image" : "/images/about_page/pandora.jpg", 
                     "info_1" : "Title : Pandora's Box",
                     "info_2" : "Author : Bernard Werber"
                 },
                 {
-                    "title" : "Favorite videogame",
+                    "title" : "Favorite Videogame",
                     "image" : "/images/about_page/rimworld.jpg", 
                     "info_1" : "Name : Rimworld",
                     "info_2" : "I like the randomness of this game"
