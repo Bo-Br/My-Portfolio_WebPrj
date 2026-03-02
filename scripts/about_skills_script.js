@@ -43,7 +43,7 @@ function AboutMeCreatePage(DATABASE){
 
     const degrees = DATABASE.about_tech.stack.degrees;
     const capabilities = DATABASE.about_tech.capabilities;
-    const webCards = DATABASE.about_tech.stack.backend
+    const webCards = DATABASE.about_tech.stack.tech
     console.log(webCards);
     createDegrees(degrees);
     createCapabilities(capabilities);

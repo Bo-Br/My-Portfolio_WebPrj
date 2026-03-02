@@ -76,16 +76,11 @@
         "stack": {
             "degrees" : ["BAC +0 : Informational technologies + Maths", "BAC +1 : EcoleIT (Python, Fullstack WebDev, OS)"],
 
-            "frontend": [
+            "tech": [
 
             { "name": "HTML", "notes": "semantic markup, accessibility basics" },
             { "name": "CSS", "notes": "flexbox, grid, responsive design" },
-            { "name": "JavaScript", "notes": "DOM, fetch, async/await" }
-
-            ],
-
-            "backend": [
-
+            { "name": "JavaScript", "notes": "DOM, fetch, async/await" },
             { "name": "Python", "notes": "scripts, logic, small tools" },
             { "name": "SQL", "notes": "database interaction, CRUD" }
 
