@@ -53,11 +53,6 @@ body{
 /*#######################################################################################################*/
 
 
-
-
-
-
-
 #body{
     color: var(--text-color); 
     display: flex;
@@ -259,7 +254,7 @@ nav, footer{
 }
 
 /* Hobbies and visited countries BOXES */
-#hobbyes, #visited_coutries{
+.smallCardBox{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -313,9 +308,32 @@ nav, footer{
 
 
 /*#######################################################################################################*/
+/*------------------------------------------- SKILLS PAGE -----------------------------------------------*/
+/*#######################################################################################################*/
+
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 3px solid black;
+    border-radius: 9px;
+    padding: 4px;
+}
+
+
+#hero{
+    justify-content: space-around;
+    align-items: flex-start; 
+}
+
+/*#######################################################################################################*/
 /*--------------------------------------------- Testing -------------------------------------------------*/
 /*#######################################################################################################*/
-/* div{border:3px solid red;} */
-/* section{border:3px solid green;} */
+div{border:3px solid red;}
+section{border:3px solid green;}
+
+
 
 

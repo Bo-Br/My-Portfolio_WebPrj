@@ -1,4 +1,4 @@
-{
+    {
     "start_page" : 
     [
             {
@@ -66,8 +66,76 @@
         }, 
 
 
-        {"visited_countries" : ["🇷🇺 Russia 🇷🇺", "🇫🇷 France 🇫🇷", "🇮🇹 Italy 🇮🇹", "🇩🇪 Germany 🇩🇪"]}
+        {"visited_countries" : ["🇫🇷 France 🇫🇷", "🇷🇺 Russia 🇷🇺", "🇮🇹 Italy 🇮🇹"]}
 
 
-    ]
+    ],
+
+    "about_tech" :{
+
+        "stack": {
+            "degrees" : ["BAC +0 : Informational technologies + Maths", "BAC +1 : EcoleIT (Python, Fullstack WebDev, OS)"],
+
+            "frontend": [
+
+            { "name": "HTML", "notes": "semantic markup, accessibility basics" },
+            { "name": "CSS", "notes": "flexbox, grid, responsive design" },
+            { "name": "JavaScript", "notes": "DOM, fetch, async/await" }
+
+            ],
+
+            "backend": [
+
+            { "name": "Python", "notes": "scripts, logic, small tools" },
+            { "name": "SQL", "notes": "database interaction, CRUD" }
+
+            ]
+
+        },
+
+        "tools": [
+
+            "Git / GitHub",
+            "Linux (Mint, Kali, Tails)",
+            "VS Code",
+            "XAMPP",
+            "MySQL",
+            "Browser DevTools"
+
+            ],
+
+        "capabilities": [
+
+            "Static websites from design to deployment",
+            "Dynamic content rendering with JavaScript",
+            "Basic REST-style data flow (JSON)",
+            "Personal portfolio projects"
+
+        ],
+        "links": {
+
+            "github": "https://github.com/Bo-Br",
+            "linkedin": "https://www.linkedin.com/in/bogdane-braoun-983a6039b/"
+
+        },
+        "contact": {
+            "email": "bogdanbraun4@gmail.com"
+        }
+    }
+
+    
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
 }
