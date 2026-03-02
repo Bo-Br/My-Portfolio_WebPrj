@@ -8,6 +8,7 @@ const zoneHero = document.querySelector("#hero")
 const zoneDegrees = document.querySelector("#degrees")
 const zoneCapabilities = document.querySelector("#capabilities")
 const zoneWeb = document.querySelector("#webTech")
+const zoneTools = document.querySelector("#tools")
 const zoneLinks = document.querySelector("#links ")
 
 console.log(zoneDegrees)
@@ -43,11 +44,17 @@ function AboutMeCreatePage(DATABASE){
 
     const degrees = DATABASE.about_tech.stack.degrees;
     const capabilities = DATABASE.about_tech.capabilities;
-    const webCards = DATABASE.about_tech.stack.tech
-    console.log(webCards);
+    const webCards = DATABASE.about_tech.stack.tech;
+    const tools = DATABASE.about_tech.tools;
+    const mail = DATABASE.about_tech.contact.email;
+    const links = DATABASE.about_tech.links; 
+    console.log(links);
     createDegrees(degrees);
     createCapabilities(capabilities);
     createWebCards(webCards);
+    createTools(tools);
+    createMailLink(mail);
+    createLinks(links)
 // Use all this info to create the page
     
 
@@ -88,3 +95,34 @@ function createWebCards(webCards){
         `
     });
 }
+
+
+function createTools(tools){
+    tools.forEach(element => {
+        zoneTools.innerHTML += `
+        <div class = "small-card">
+            <h3>${element}</h3>
+        </div>
+        `
+    });
+};
+
+
+function createMailLink(mail){
+        zoneLinks.innerHTML += `
+        <a href="mailto:${mail}" class = "small-card">
+            <p>Mail</p>
+        </a>
+        `
+}; 
+
+
+function createLinks(links){
+    links.forEach(element => {
+        zoneLinks.innerHTML += `
+        <a href="${element.link}" target = "_blank" class = "small-card">
+            <p>${element.name}</p>
+        </a>
+        `
+    });
+};

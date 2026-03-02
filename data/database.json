@@ -107,12 +107,12 @@
             "Personal portfolio projects"
 
         ],
-        "links": {
+        "links": [
 
-            "github": "https://github.com/Bo-Br",
-            "linkedin": "https://www.linkedin.com/in/bogdane-braoun-983a6039b/"
+           { "name" : "github", "link" : "https://github.com/Bo-Br"},
+           { "name" : "linkedin", "link" : "https://www.linkedin.com/in/bogdane-braoun-983a6039b/"}
 
-        },
+        ],
         "contact": {
             "email": "bogdanbraun4@gmail.com"
         }
