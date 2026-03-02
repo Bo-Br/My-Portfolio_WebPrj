@@ -96,11 +96,14 @@ function createCountries(countries){
 function createHeroZone(hero){
     // Adding the Hero Zone
     zoneAbout.innerHTML += `
-    <div id = "imageAndText" class = "cardBox">
-        <img src="${hero.photo}" alt="">
-        <div>
-            <h3> Who am I? </h3>
-            <p> ${hero.fast_description} </p>
+    <div>
+    <h2> About me </h2>
+        <div id = "imageAndText" class = "cardBox">
+            <img src="${hero.photo}" alt="">
+            <div>
+                <h3> Who am I? </h3>
+                <p> ${hero.fast_description} </p>
+            </div>
         </div>
     </div>
         ` ;
