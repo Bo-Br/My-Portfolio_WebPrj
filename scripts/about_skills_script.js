@@ -3,7 +3,6 @@
 // #################################################################################################
 
 
-
 const zoneHero = document.querySelector("#hero")
 const zoneDegrees = document.querySelector("#degrees")
 const zoneCapabilities = document.querySelector("#capabilities")
@@ -88,7 +87,7 @@ function createCapabilities(capabilities){
 function createWebCards(webCards){
     webCards.forEach(element => {
         zoneWeb.innerHTML += `
-        <div class = "fact-card">
+        <div id = ${element.name} class = "fact-card">
             <h3>${element.name}</h3>
             <p>${element.notes}</p>
         </div>
@@ -100,7 +99,7 @@ function createWebCards(webCards){
 function createTools(tools){
     tools.forEach(element => {
         zoneTools.innerHTML += `
-        <div class = "small-card">
+        <div id = ${element} class = "small-card">
             <h3>${element}</h3>
         </div>
         `
@@ -126,3 +125,14 @@ function createLinks(links){
         `
     });
 };
+
+
+
+document.querySelector("#drrText").addEventListener("click", () => {
+    clickedel()
+});
+
+function clickedel(){
+    const mainText = document.querySelector("#mainText")
+    mainText.textContent = "zer"
+}

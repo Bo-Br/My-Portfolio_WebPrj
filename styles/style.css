@@ -330,13 +330,22 @@ nav, footer{
     align-items: center;
     border-radius: 9px;
     padding:10px;
-
+    width: auto;
+    height: max-content;
 }
 
 
 #hero{
     justify-content: space-around;
     align-items: flex-start; 
+}
+
+#toolsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
 }
 
 /*#######################################################################################################*/
