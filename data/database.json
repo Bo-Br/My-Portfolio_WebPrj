@@ -82,7 +82,8 @@
             { "name": "CSS", "notes": "flexbox, grid, responsive design" },
             { "name": "JavaScript", "notes": "DOM, fetch, async/await" },
             { "name": "Python", "notes": "scripts, logic, small tools" },
-            { "name": "SQL", "notes": "database interaction, CRUD" }
+            { "name": "SQL", "notes": "database interaction, CRUD" },
+            { "name": "PHP", "notes": "database interaction, forms" }
 
             ]
 
@@ -90,10 +91,11 @@
 
         "tools": [
 
-            "Git / GitHub",
+            "GitHub",
             "Linux (Mint, Kali, Tails)",
             "VS Code",
             "XAMPP",
+            "Laragon",
             "MySQL",
             "Browser DevTools"
 
@@ -104,7 +106,7 @@
             "Static websites from design to deployment",
             "Dynamic content rendering with JavaScript",
             "Basic REST-style data flow (JSON)",
-            "Personal portfolio projects"
+            "Fullstack Web projects"
 
         ],
         "links": [
